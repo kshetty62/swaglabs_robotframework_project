@@ -1,0 +1,40 @@
+# Core Robot Framework library
+robotframework
+
+# SeleniumLibrary for UI testing
+robotframework-seleniumlibrary==6.1.0
+
+# RequestsLibrary for API testing
+robotframework-requests==0.9.3
+
+# Pabot for parallel execution
+robotframework-pabot==2.9.0
+
+# Python library for JSON handling (if needed for test data)
+jsonschema==4.19.0
+
+# Additional utility libraries for Robot Framework
+robotframework-datadriver==1.6.1      # For data-driven tests
+robotframework-jsonlibrary    # For JSON validation
+
+# Browser library (alternative to Selenium for modern UI automation)
+robotframework-browser==16.0.0        # Requires Playwright
+
+# Dependency for Playwright (if using robotframework-browser)
+playwright==1.39.0
+
+# For custom Python keywords (if using custom Python libraries)
+robotframework-pythonlibcore==4.0.0
+
+# Performance testing (if applicable)
+  # For Locust integration
+
+# Environment configuration management
+python-decouple==3.8                 # For environment-specific variables
+
+# Code linting and formatting for Robot Framework
+robotframework-lint==1.2             # For linting Robot Framework files
+robotframework-tidy==2.0.2           # For formatting and cleaning up test cases
+
+# General utilities
+pytest==7.4.0                        # For debugging or running auxiliary tests

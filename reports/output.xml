@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.9.5 on darwin)" generated="2024-12-17T15:44:50.887188" rpa="false" schemaversion="5">
+<suite id="s1" name="Ui Tests" source="/Users/kshetty/PycharmProjects/robotframework-project/testcases/ui_tests.robot">
+<test id="s1-t1" name="Valid login with correct credentials" line="13">
+<kw name="Given I am on the Swag Labs login page" owner="ui_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-17T15:44:51.390358" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2024-12-17T15:44:51.400481" level="DEBUG">Selenium Manager binary found at: /Users/kshetty/PycharmProjects/robotframework-project/.venv/lib/python3.9/site-packages/selenium/webdriver/common/macos/selenium-manager</msg>
+<msg time="2024-12-17T15:44:51.400635" level="DEBUG">Executing process: /Users/kshetty/PycharmProjects/robotframework-project/.venv/lib/python3.9/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --debug --language-binding python --output json</msg>
+<msg time="2024-12-17T15:44:52.496617" level="DEBUG">Sending stats to Plausible: Props { browser: "chrome", browser_version: "", os: "macos", arch: "x86_64", lang: "python", selenium_version: "4.27" }</msg>
+<msg time="2024-12-17T15:44:52.497112" level="DEBUG">chromedriver not found in PATH</msg>
+<msg time="2024-12-17T15:44:52.497210" level="DEBUG">chrome detected at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome</msg>
+<msg time="2024-12-17T15:44:52.497294" level="DEBUG">Running command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version</msg>
+<msg time="2024-12-17T15:44:52.497371" level="DEBUG">Output: "Google Chrome 131.0.6778.140 "</msg>
+<msg time="2024-12-17T15:44:52.497445" level="DEBUG">Detected browser: chrome 131.0.6778.140</msg>
+<msg time="2024-12-17T15:44:52.497518" level="DEBUG">Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json</msg>
+<msg time="2024-12-17T15:44:52.497592" level="DEBUG">Required driver: chromedriver 131.0.6778.108</msg>
+<msg time="2024-12-17T15:44:52.497677" level="DEBUG">chromedriver 131.0.6778.108 already in the cache</msg>
+<msg time="2024-12-17T15:44:52.497750" level="DEBUG">Driver path: /Users/kshetty/.cache/selenium/chromedriver/mac-x64/131.0.6778.108/chromedriver</msg>
+<msg time="2024-12-17T15:44:52.497824" level="DEBUG">Browser path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome</msg>
+<msg time="2024-12-17T15:44:52.508790" level="DEBUG">Started executable: `/Users/kshetty/.cache/selenium/chromedriver/mac-x64/131.0.6778.108/chromedriver` in a child process with pid: 65673 using 0 to output -3</msg>
+<msg time="2024-12-17T15:44:53.187205" level="DEBUG">POST http://localhost:59746/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': &lt;PageLoadStrategy.normal: 'normal'&gt;, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', 'args': []}}}}</msg>
+<msg time="2024-12-17T15:44:53.188071" level="DEBUG">Starting new HTTP connection (1): localhost:59746</msg>
+<msg time="2024-12-17T15:44:56.450084" level="DEBUG">http://localhost:59746 "POST /session HTTP/11" 200 0</msg>
+<msg time="2024-12-17T15:44:56.450423" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.140","chrome":{"chromedriverVersion":"131.0.6778.108 (3b014839fbc4fb688b2f5af512d6ce312ad208b1-refs/branch-heads/6778@{#2393})","userDataDir":"/var/folders/8n/rp4f23s92hj50lvf79rqrq592q2rjr/T/.org.chromium.Chromium.eOJICS"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:59764"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"b2eb0968a9207978ab5d97a2ea463767"}} | headers=HTTPHeaderDict({'Content-Length': '892', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-12-17T15:44:56.450685" level="DEBUG">Finished Request</msg>
+<msg time="2024-12-17T15:44:56.451520" level="DEBUG">POST http://localhost:59746/session/b2eb0968a9207978ab5d97a2ea463767/timeouts {'script': 5000}</msg>
+<msg time="2024-12-17T15:44:56.457227" level="DEBUG">http://localhost:59746 "POST /session/b2eb0968a9207978ab5d97a2ea463767/timeouts HTTP/11" 200 0</msg>
+<msg time="2024-12-17T15:44:56.457604" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-12-17T15:44:56.457838" level="DEBUG">Finished Request</msg>
+<msg time="2024-12-17T15:44:56.458243" level="DEBUG">POST http://localhost:59746/session/b2eb0968a9207978ab5d97a2ea463767/timeouts {'implicit': 0}</msg>
+<msg time="2024-12-17T15:44:56.462011" level="DEBUG">http://localhost:59746 "POST /session/b2eb0968a9207978ab5d97a2ea463767/timeouts HTTP/11" 200 0</msg>
+<msg time="2024-12-17T15:44:56.462382" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-12-17T15:44:56.462867" level="DEBUG">Finished Request</msg>
+<msg time="2024-12-17T15:44:56.463636" level="DEBUG">POST http://localhost:59746/session/b2eb0968a9207978ab5d97a2ea463767/timeouts {'pageLoad': 300000}</msg>
+<msg time="2024-12-17T15:44:56.466204" level="DEBUG">http://localhost:59746 "POST /session/b2eb0968a9207978ab5d97a2ea463767/timeouts HTTP/11" 200 0</msg>
+<msg time="2024-12-17T15:44:56.466523" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-12-17T15:44:56.466851" level="DEBUG">Finished Request</msg>
+<msg time="2024-12-17T15:44:56.467367" level="DEBUG">POST http://localhost:59746/session/b2eb0968a9207978ab5d97a2ea463767/url {'url': 'https://www.saucedemo.com/'}</msg>
+<msg time="2024-12-17T15:44:57.690666" level="DEBUG">http://localhost:59746 "POST /session/b2eb0968a9207978ab5d97a2ea463767/url HTTP/11" 200 0</msg>
+<msg time="2024-12-17T15:44:57.691054" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-12-17T15:44:57.691388" level="DEBUG">Finished Request</msg>
+<msg time="2024-12-17T15:44:57.691716" level="DEBUG">Opened browser with session id b2eb0968a9207978ab5d97a2ea463767.</msg>
+<arg>${LOGIN_PAGE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-17T15:44:51.389856" elapsed="6.302274"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2024-12-17T15:44:57.694193" level="DEBUG">POST http://localhost:59746/session/b2eb0968a9207978ab5d97a2ea463767/window/maximize {}</msg>
+<msg time="2024-12-17T15:44:57.745851" level="DEBUG">http://localhost:59746 "POST /session/b2eb0968a9207978ab5d97a2ea463767/window/maximize HTTP/11" 200 0</msg>
+<msg time="2024-12-17T15:44:57.746123" level="DEBUG">Remote response: status=200 | data={"value":{"height":819,"width":1440,"x":0,"y":25}} | headers=HTTPHeaderDict({'Content-Length': '50', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-12-17T15:44:57.746307" level="DEBUG">Finished Request</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-17T15:44:57.693360" elapsed="0.053123"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-12-17T15:44:57.765371" level="DEBUG">POST http://localhost:59746/session/b2eb0968a9207978ab5d97a2ea463767/elements {'using': 'css selector', 'value': '[id="user-name"]'}</msg>
+<msg time="2024-12-17T15:44:57.789842" level="DEBUG">http://localhost:59746 "POST /session/b2eb0968a9207978ab5d97a2ea463767/elements HTTP/11" 200 0</msg>
+<msg time="2024-12-17T15:44:57.790189" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.E9EAC1A208B3F533B7B3A79E7666E746.d.A86D0A0793265F81FA5A14C13952FBB2.e.23"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-12-17T15:44:57.790669" level="DEBUG">Finished Request</msg>
+<msg time="2024-12-17T15:44:57.790835" level="INFO">Current page contains element 'id:user-name'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-12-17T15:44:57.763440" elapsed="0.027531"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-12-17T15:44:57.792270" level="DEBUG">POST http://localhost:59746/session/b2eb0968a9207978ab5d97a2ea463767/elements {'using': 'css selector', 'value': '[id="password"]'}</msg>
+<msg time="2024-12-17T15:44:57.809791" level="DEBUG">http://localhost:59746 "POST /session/b2eb0968a9207978ab5d97a2ea463767/elements HTTP/11" 200 0</msg>
+<msg time="2024-12-17T15:44:57.810190" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.E9EAC1A208B3F533B7B3A79E7666E746.d.A86D0A0793265F81FA5A14C13952FBB2.e.26"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-12-17T15:44:57.810442" level="DEBUG">Finished Request</msg>
+<msg time="2024-12-17T15:44:57.810594" level="INFO">Current page contains element 'id:password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-12-17T15:44:57.791384" elapsed="0.019381"/>
+</kw>
+<doc>Open the Swag Labs login page in the browser.</doc>
+<status status="PASS" start="2024-12-17T15:44:51.388567" elapsed="6.422498"/>
+</kw>
+<kw name="When I enter username and password" owner="ui_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-17T15:44:57.815002" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<msg time="2024-12-17T15:44:57.815521" level="DEBUG">POST http://localhost:59746/session/b2eb0968a9207978ab5d97a2ea463767/elements {'using': 'css selector', 'value': '[id="user-name"]'}</msg>
+<msg time="2024-12-17T15:44:57.828387" level="DEBUG">http://localhost:59746 "POST /session/b2eb0968a9207978ab5d97a2ea463767/elements HTTP/11" 200 0</msg>
+<msg time="2024-12-17T15:44:57.828708" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.E9EAC1A208B3F533B7B3A79E7666E746.d.A86D0A0793265F81FA5A14C13952FBB2.e.23"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-12-17T15:44:57.828922" level="DEBUG">Finished Request</msg>
+<msg time="2024-12-17T15:44:57.829346" level="DEBUG">POST http://localhost:59746/session/b2eb0968a9207978ab5d97a2ea463767/element/f.E9EAC1A208B3F533B7B3A79E7666E746.d.A86D0A0793265F81FA5A14C13952FBB2.e.23/clear {}</msg>
+<msg time="2024-12-17T15:44:57.890291" level="DEBUG">http://localhost:59746 "POST /session/b2eb0968a9207978ab5d97a2ea463767/element/f.E9EAC1A208B3F533B7B3A79E7666E746.d.A86D0A0793265F81FA5A14C13952FBB2.e.23/clear HTTP/11" 200 0</msg>
+<msg time="2024-12-17T15:44:57.890634" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-12-17T15:44:57.890767" level="DEBUG">Finished Request</msg>
+<msg time="2024-12-17T15:44:57.890948" level="DEBUG">POST http://localhost:59746/session/b2eb0968a9207978ab5d97a2ea463767/element/f.E9EAC1A208B3F533B7B3A79E7666E746.d.A86D0A0793265F81FA5A14C13952FBB2.e.23/value {'text': 'standard_user', 'value': ['s', 't', 'a', 'n', 'd', 'a', 'r', 'd', '_', 'u', 's', 'e', 'r']}</msg>
+<msg time="2024-12-17T15:44:58.257398" level="DEBUG">http://localhost:59746 "POST /session/b2eb0968a9207978ab5d97a2ea463767/element/f.E9EAC1A208B3F533B7B3A79E7666E746.d.A86D0A0793265F81FA5A14C13952FBB2.e.23/value HTTP/11" 200 0</msg>
+<msg time="2024-12-17T15:44:58.257683" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-12-17T15:44:58.257874" level="DEBUG">Finished Request</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T15:44:57.813689" elapsed="0.444396"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-17T15:44:58.259332" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<msg time="2024-12-17T15:44:58.260040" level="DEBUG">POST http://localhost:59746/session/b2eb0968a9207978ab5d97a2ea463767/elements {'using': 'css selector', 'value': '[id="password"]'}</msg>
+<msg time="2024-12-17T15:44:58.272452" level="DEBUG">http://localhost:59746 "POST /session/b2eb0968a9207978ab5d97a2ea463767/elements HTTP/11" 200 0</msg>
+<msg time="2024-12-17T15:44:58.272751" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.E9EAC1A208B3F533B7B3A79E7666E746.d.A86D0A0793265F81FA5A14C13952FBB2.e.26"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-12-17T15:44:58.272942" level="DEBUG">Finished Request</msg>
+<msg time="2024-12-17T15:44:58.273181" level="DEBUG">POST http://localhost:59746/session/b2eb0968a9207978ab5d97a2ea463767/element/f.E9EAC1A208B3F533B7B3A79E7666E746.d.A86D0A0793265F81FA5A14C13952FBB2.e.26/clear {}</msg>
+<msg time="2024-12-17T15:44:58.313979" level="DEBUG">http://localhost:59746 "POST /session/b2eb0968a9207978ab5d97a2ea463767/element/f.E9EAC1A208B3F533B7B3A79E7666E746.d.A86D0A0793265F81FA5A14C13952FBB2.e.26/clear HTTP/11" 200 0</msg>
+<msg time="2024-12-17T15:44:58.314270" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-12-17T15:44:58.314439" level="DEBUG">Finished Request</msg>
+<msg time="2024-12-17T15:44:58.314687" level="DEBUG">POST http://localhost:59746/session/b2eb0968a9207978ab5d97a2ea463767/element/f.E9EAC1A208B3F533B7B3A79E7666E746.d.A86D0A0793265F81FA5A14C13952FBB2.e.26/value {'text': 'secret_sauce', 'value': ['s', 'e', 'c', 'r', 'e', 't', '_', 's', 'a', 'u', 'c', 'e']}</msg>
+<msg time="2024-12-17T15:44:58.436812" level="DEBUG">http://localhost:59746 "POST /session/b2eb0968a9207978ab5d97a2ea463767/element/f.E9EAC1A208B3F533B7B3A79E7666E746.d.A86D0A0793265F81FA5A14C13952FBB2.e.26/value HTTP/11" 200 0</msg>
+<msg time="2024-12-17T15:44:58.437080" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-12-17T15:44:58.437254" level="DEBUG">Finished Request</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-17T15:44:58.258500" elapsed="0.178923"/>
+</kw>
+<arg>${VALID_USERNAME}</arg>
+<arg>
